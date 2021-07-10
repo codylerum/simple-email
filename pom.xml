@@ -175,13 +175,13 @@
 						<configuration>
 							<release>${version.java}</release>
 							<showWarnings>true</showWarnings>
-							<failOnWarning>true</failOnWarning>
+							<failOnWarning>false</failOnWarning>
 							<maxmem>2048m</maxmem>
 							<fork>true</fork>
 							<compilerArgs>
 								<arg>-parameters</arg>
 								<arg>-XDcompilePolicy=simple</arg>
-								<arg>-Xplugin:ErrorProne -Xep:UnusedMethod:OFF -Xep:MissingSummary:OFF -Xep:EmptyBlockTag:OFF</arg>
+								<arg>-Xplugin:ErrorProne</arg>
 								<arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED</arg>
 								<arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</arg>
 								<arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED</arg>
